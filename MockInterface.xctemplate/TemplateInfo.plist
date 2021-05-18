@@ -5,7 +5,7 @@
 	<key>DefaultCompletionName</key>
 	<string>___VARIABLE_productName___Mock</string>
 	<key>Description</key>
-	<string>The name of the mock class</string>
+	<string>The name of the mock interface</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -16,19 +16,19 @@
 			<key>Required</key>
 			<string>YES</string>
 			<key>Name</key>
-			<string>Subclass of:</string>
+			<string>Implementing Protocol:</string>
 			<key>Description</key>
-			<string>What class the mock is a subclass of</string>
+			<string>What protocol the mock is an implementation of</string>
 			<key>Type</key>
 			<string>text</string>
 		</dict>
 		<dict>
 			<key>Identifier</key>
-			<string>swiftFunction</string>
+			<string>swiftProtocolFunction</string>
 			<key>Required</key>
 			<string>YES</string>
 			<key>Name</key>
-			<string>Overridden Function:</string>
+			<string>Protocol Function:</string>
 			<key>Description</key>
 			<string>The function to mock</string>
 			<key>Type</key>
@@ -51,7 +51,7 @@
 			<key>MainTemplateFiles</key>
 			<dict>
 				<key>Swift</key>
-				<string>___VARIABLE_swiftSubclass___Mock.swift</string>
+				<string>___VARIABLE_swiftProtocol___Mock</string>
 			</dict>
 			<key>Name</key>
 			<string>Language:</string>
@@ -72,7 +72,7 @@
 	<key>SortOrder</key>
 	<string>8</string>
 	<key>Summary</key>
-	<string>A Mock Class</string>
+	<string>A Mock Interface</string>
 	<key>BuildableType</key>
 	<string>Test</string>
 </dict>

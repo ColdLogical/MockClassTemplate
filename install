@@ -22,7 +22,8 @@ if [ -d "$SOURCE_DIRECTORY" ]; then
         echo "Creating symbolic links to"
         echo ${TEMPLATE_DIRECTORY}
 
-        sudo ln -s "$TEMPLATE_DIRECTORY/MockClass.xctemplate" MockClass.xctemplate
+        sudo ln -sfn "${TEMPLATE_DIRECTORY}/MockClass.xctemplate" MockClass.xctemplate
+        sudo ln -sfn "${TEMPLATE_DIRECTORY}/MockInterface.xctemplate" MockInterface.xctemplate
 
         echo "Done"
 else
